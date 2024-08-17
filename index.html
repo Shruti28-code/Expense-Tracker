@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="Style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2 id="heading1">Expense Tracker</h2>
+      <br />
+      <form id="expensesform">
+        <input
+          class="just"
+          type="text"
+          id="description"
+          placeholder="Description"
+          required
+          style="font-family: 'Times New Roman', Times, serif"
+        />
+        <br />
+        <select
+          class="just"
+          id="category"
+          required
+          style="font-family: 'Times New Roman', Times, serif"
+        >
+          <option value="">Select category</option>
+          <option value="food">Food</option>
+          <option value="transportation">Transportation</option>
+          <option value="utillities">Utillities</option>
+          <option value="entertainment">Entertainment</option>
+          <option value="other">Others</option>
+        </select>
+        <br />
+        <input
+          class="just"
+          type="number"
+          id="amount"
+          placeholder="Amount"
+          required
+          style="font-family: 'Times New Roman', Times, serif"
+        />
+        <br />
+        <input
+          id="submitbutton"
+          class="just"
+          type="submit"
+          placeholder="Add Expense"
+          style="font-family: 'Times New Roman', Times, serif"
+        />
+      </form>
+      <br />
+      <h3 style="font-family: 'Times New Roman', Times, serif">
+        Expense Summary
+      </h3>
+      <br />
+      <table id="expenseTable">
+        <thead>
+          <tr>
+            <th>Description</th>
+            <th>Category</th>
+            <th>Amount</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
